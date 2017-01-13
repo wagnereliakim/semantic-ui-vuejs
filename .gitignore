@@ -1,3 +1,6 @@
 node_modules
 .idea
 *.tgz
+semantic/src
+semantic/tasks
+semantic/gulpfile.js

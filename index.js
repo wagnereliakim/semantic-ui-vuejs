@@ -1,5 +1,4 @@
-var Button = require('./src/Button.vue');
-// var LessFiles = require("./assets/app.less");
+var Button = require('./src/components/Button.vue');
 
 module.exports = {
     install: function (Vue, options) {

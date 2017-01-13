@@ -68,6 +68,7 @@ config.module = {
 // custom naming format if file is larger than the threshold
 // name: '[name].[ext]?[hash]'
 // }
+
 // }
     ]
 }
