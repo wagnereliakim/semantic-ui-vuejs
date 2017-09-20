@@ -1,18 +1,30 @@
-# well-coney-angularjs
+# Semantic UI VueJS components
 
-> A Vue.js project
+> Components to use with Vue2
 
-## Build Setup
+## Installation
 
 ``` bash
 # install dependencies
-npm install
+$ npm install semantic-ui-vuejs
 
-# serve with hot reload at localhost:8080
-npm run dev
-
-# build for production with minification
-npm run build
 ```
 
-For detailed explanation on how things work, consult the [docs for vue-loader](http://vuejs.github.io/vue-loader).
+> Configure webpack.config.js
+``` json
+    {
+        test: /\.css$/,
+        loader: 'style-loader!css-loader'
+    },
+    {
+        test: /\.(png|jpg|gif|svg)$/,
+        loader: 'file-loader',
+        options: {
+            name: '[name].[ext]?[hash]'
+        }
+    },
+    {
+        test: /\.(woff|woff2|eot|ttf|svg)(\?.*$|$)/,
+        loader: 'url-loader?importLoaders=1&limit=100000'
+    }
+```

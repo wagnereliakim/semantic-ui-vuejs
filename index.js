@@ -1,7 +1,20 @@
-var Button = require('./src/components/Button.vue');
+import UiButton from "./src/components/Button.vue";
+import UiButtonGroup from "./src/components/ButtonGroup.vue";
+import UiDropdown from "./src/components/Dropdown.vue";
 
-module.exports = {
-    install: function (Vue, options) {
-        Vue.component('ui-button', Button);
-    }
+import 'semantic-ui-css/semantic.css';
+
+export const components = {
+  UiButton,
+  UiButtonGroup,
+  UiDropdown
 };
+
+export default {
+  install (Vue) {
+    Object.keys(components).forEach((name) => {
+      Vue.component(name, components[name])
+    });
+  }
+};
+
